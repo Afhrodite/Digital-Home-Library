@@ -1,6 +1,21 @@
 # Digital Home Library
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![SQLite](https://img.shields.io/badge/Database-SQLite-003B57?logo=sqlite&logoColor=white)
+![Tkinter](https://img.shields.io/badge/Tkinter-GUI-informational)
 
-By Reka Gabosi
+_Created by **Réka Gábosi**_
+
+## Table of Contents
+
+- [Description](#description)
+- [Features](#features)
+- [Project Files Overview](#project-files-overview)
+- [Database Design](#database-design)
+- [Installation](#installation)
+- [Design Choices](#design-choices)
+- [Testing](#testing)
+- [Acknowledgments](#acknowledgments)
+- [Demo](#demo)
 
 ## Description
 
@@ -71,7 +86,7 @@ The SQLite database has a single table named **books** with the following schema
 * **id:** which specifies the unique ID for each book as an `INTEGER`. This will be the `PRIMARY KEY`.
 * **title:** which specifies the title of the book as `TEXT`.
 * **author:** which specifies the author of the book as `TEXT`.
-* **status:** which specifies whether the books is read or unread as `TEXT`. A check will ensure that no other value is entered here other then read and unread.
+* **status:** which specifies whether the book is read or unread as `TEXT`. A check will ensure that no other value is entered here other then read and unread.
 * **pages:** which specifies the page count of the book.
 
 All columns in the **books** table are required and hence they should have the `NOT NULL` constraint applied. For pages I wasn't sure if I should require it, but I think it's nice for people to look back on how many pages they have read.
@@ -95,7 +110,7 @@ pip install -r requirements.txt
 ### Running the Application
 
 1. Clone this repository or download the files.
-2. Run the application with writing in the terminal the following:
+2. Run the application by entering in the terminal the following:
 
 ```bash
 python main.py
@@ -105,7 +120,7 @@ python main.py
 
 ### Modularity
 
-Each function is made to handle specific tasts, like adding, updating, deleting and searching books. Like this the code is more readable.
+Each function is made to handle specific tasks, like adding, updating, deleting and searching books. Like this the code is more readable.
 
 ### SQLite for Data Storage
 
@@ -118,3 +133,17 @@ Tkinter is a simple built-in solution for creating graphical applications in Pyt
 ## Testing
 
 Manual testing was conducted by interacting with the GUI to verify all features, including adding, updating, searching, and deleting books.
+
+## Acknowledgments
+
+- This project was created as a final project for **Harvard University's CS50’s Introduction to Computer Science** online course.
+- Additional skills and knowledge were gained through completing:
+  - **CS50’s Introduction to Programming with Python**
+  - **CS50’s Introduction to Databases with SQL**
+- Special thanks to [Codemy.com YouTube Channel](https://www.youtube.com/@Codemycom) for providing excellent tutorials on `Tkinter` GUI development.
+
+## Demo
+
+Check out the demo of how the Digital Home Library works:
+
+[View Demo Video](images/readme_images/demo.mp4)
