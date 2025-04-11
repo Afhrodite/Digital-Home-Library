@@ -60,9 +60,11 @@ The interface is built using the `Tkinter` library, making it more user-friendly
 ## Project Files Overview
 
 * `main.py` - The main program, which runs the Digital Home Library.
-* `images/` - Contains both the images for the GUI and images for the README.
+* `images/` - Contains both the images for the GUI, README, and the demo video.
 * `library.db` - SQLite database which stores books; it is generated on the first run.
+* `requirements.txt` - A file listing the dependencies required to run the application.
 * `README.md` - Project documentation.
+* `LICENSE` - The license file for the project (CC BY-ND 4.0).
 
 ## Database Design
 
