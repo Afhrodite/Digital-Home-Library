@@ -20,19 +20,27 @@ The interface is built using the `Tkinter` library, making it more user-friendly
 
 * **Search Books:** Find books with their **title** or **author**.
 
-![Main menu](images/readme_images/main_menu.png)
+<div align="center">
+    <img src="images/readme_images/main_menu.png" alt="Main Menu">
+</div>
 
 * **Add Books:** To add books to the database, with entering the **title** of the book, the **author**, the **status** in which the book is, if it's read or unread and the **page** count.
 
-![Add Books](images/readme_images/add_book.png)
+<div align="center">
+    <img src="images/readme_images/add_book.png" alt="Add Books">
+</div>
 
 * **Update Books:** To update the **status** and the **page** count of a book. It's important to enter the title and the author, so that the program knows which book are we updating.
 
-![Update Books](images/readme_images/update_book.png)
+<div align="center">
+    <img src="images/readme_images/update_book.png" alt="Update Books">
+</div>
 
 * **Delete Books:** To delete a book from the database, by entering their title and author.
 
-![Delete Books](images/readme_images/delete_book.png)
+<div align="center">
+    <img src="images/readme_images/delete_book.png" alt="Delete Books">
+</div>
 
 ## Project Files Overview
 
@@ -56,7 +64,9 @@ The database is designed to efficiently store and manage all the books the user 
 
 The SQLite database has a single table named **books** with the following schema:
 
-![Schema](images/readme_images/schema.png)
+<div align="center">
+    <img src="images/readme_images/schema.png" alt="Schema">
+</div>
 
 * **id:** which specifies the unique ID for each book as an `INTEGER`. This will be the `PRIMARY KEY`.
 * **title:** which specifies the title of the book as `TEXT`.
